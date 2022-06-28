@@ -22,6 +22,7 @@ def addContact(request):
 
     return render(request, 'new.html')
     
+    
 
         
 
