@@ -24,9 +24,9 @@ def addContact(request):
             address=request.POST['address'],
             )
         new_contact.save()
-        return redirect('/')
-        def editContact(request, pk):
-         contact = Contact.objects.get(id=pk)
+        return render(request, 'index.html')
+        
+      
 
 def editContact(request, pk):
     contact = Contact.objects.get(id=pk)
